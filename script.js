@@ -7,9 +7,9 @@ let triangle = {
    bSide: 0,
    cSide: 0,
    setValues: function() { 
-    // this.aSide = +prompt('Enter side \'a\'');
-    // this.bSide = +prompt('Enter side \'b\'');
-    // this.cSide = +prompt('Enter side \'c\'');
+    this.aSide = +prompt('Enter side \'a\'');
+    this.bSide = +prompt('Enter side \'b\'');
+    this.cSide = +prompt('Enter side \'c\'');
     console.log(this.aSide, this.bSide, this.cSide);
    },
    getPerimeter: function() { 
@@ -50,9 +50,6 @@ format.apply(country.capital, ['', '']); // Kyiv
 format.apply(this); // undefined
 
 console.log('===Task 3===');
-// 3) Со звездочкой: реализовать функцию createCalculator, ваш код должен находиться только внутри этой функции,
-// таким образом что бы код ниже работал и выдовал в консоль то что написано в коментариях к каждой строке. 
-// Подсказка: вернуть нужно объект с функциями и использовать замыкания.
 
 function createCalculator(a) {
     return {
